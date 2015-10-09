@@ -1,0 +1,5 @@
+all: 
+	mkdir HapSeq2_pipeline
+	cp -r BAMs CEU.sample.ID.txt sites.vcf mach_to_vcf_phased.pl run_bam_parser.pl bam_parser hapseq Omni.recode.vcf HapSeq2_pipeline/
+	tar zcvf HapSeq2_pipeline.tgz HapSeq2_pipeline
+	rm -fr HapSeq2_pipeline

@@ -1,0 +1,38 @@
+
+VCFtools - v0.1.9.0
+(C) Adam Auton 2009
+
+Parameters as interpreted:
+	--vcf res-hapseq.vcf
+	--out compare
+	--diff Omni.recode.vcf
+	--diff-discordance-matrix
+	--diff-switch-error
+
+Reading Index file.
+Building new index file.
+	Scanning Chromosome: 20
+Writing Index file.
+File contains 1000 entries and 98 individuals.
+Applying Required Filters.
+After filtering, kept 98 out of 98 Individuals
+After filtering, kept 1000 out of a possible 1000 Sites
+Reading Index file.
+Building new index file.
+	Scanning Chromosome: 20
+Writing Index file.
+File contains 72 entries and 2123 individuals.
+Applying Required Filters.
+Comparing individuals in VCF files...
+N_combined_individuals:	2123
+N_individuals_common_to_both_files:	98
+N_individuals_unique_to_file1:	0
+N_individuals_unique_to_file2:	2025
+Comparing sites in VCF files...
+Found 68 SNPs common to both files.
+Found 932 SNPs only in main file.
+Found 4 SNPs only in second file.
+Outputting Discordance Matrix
+	For bi-allelic loci, called in both files, with matching alleles only...
+Outputting Phase Switch Errors...
+Run Time = 0.00 seconds

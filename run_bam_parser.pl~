@@ -1,0 +1,30 @@
+
+$bam_dir = shift;
+$vcf = shift;
+$target_dir = shift;
+
+die "Usage: $0 bam_dir vcf_file target_dir\n" unless $target_dir;
+
+
+foreach $pop (qw(CEU YRI)) {
+$i=0;
+open(FI, "/lustre/scratch/dzhi/1000G/bam/$pop.sample.ID.txt");
+while(<FI>)
+{
+	chomp;
+	$i ++;
+	&run ( "~/Works/HapSeq/HL/HL/bam_parser $bam_dir/$pop\_processed/$_.bam $vcf $target_dir/$pop/$_ $i");
+}
+close FI;
+}
+
+
+sub run
+{
+    $_ = shift;
+    print $_, "\n";
+    system $_;
+}
+
+
+

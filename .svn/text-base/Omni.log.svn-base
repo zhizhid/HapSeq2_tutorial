@@ -1,0 +1,25 @@
+
+VCFtools - v0.1.9.0
+(C) Adam Auton 2009
+
+Parameters as interpreted:
+	--gzvcf /scratch/user/dzhi/1000G/Omni/ALL.chr20.omni_2123_samples_b37_SHAPEIT.20120103.snps.chip_based.haplotypes.vcf.gz
+	--chr 20
+	--to-bp 6981782
+	--out Omni
+	--recode
+	--from-bp 6975890
+
+Using zlib version: 1.2.3
+Versions of zlib >= 1.2.4 will be *much* faster when reading zipped VCF files.
+Reading Index file.
+File contains 54241 entries and 2123 individuals.
+Filtering by chromosome.
+	Chromosome: 20
+Keeping 54241 entries on specified chromosomes.
+Applying Required Filters.
+Filtering sites by chromosome and/or position
+After filtering, kept 2123 out of 2123 Individuals
+After filtering, kept 7 out of a possible 54241 Sites
+Outputting VCF file... Done
+Run Time = 3.00 seconds
